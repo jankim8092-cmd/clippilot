@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ClipPilot turns long videos into short-form clips." />
+  <title>ClipPilot — Turn Long Videos Into Viral Shorts</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home">ClipPilot</a>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#dashboard">Dashboard</a>
+    </nav>
+    <a class="login" href="#dashboard">Get started</a>
+  </header>
+
+  <main id="home">
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <span class="eyebrow">✦ AI AUTOMATIC CLIPPING FOR CREATORS</span>
+        <h1>Turn Long Videos Into <span>Viral Shorts</span></h1>
+        <p>Upload a podcast, stream or lecture. ClipPilot helps you find the moments worth sharing and turn them into vertical clips.</p>
+        <div class="actions">
+          <a class="button primary" href="#dashboard">Get started free →</a>
+          <a class="button secondary" href="#pricing">See pricing</a>
+        </div>
+        <div class="meta">MP4 &amp; MOV uploads <i>•</i> 9:16 vertical <i>•</i> Up to 5 clips</div>
+      </div>
+      <div class="visual" aria-label="Illustration of a long video becoming short clips">
+        <div class="wave">
+          <div class="wave-label"><span>●</span> podcast_episode.mp4 <small>01:12:40</small></div>
+          <div class="bars"></div>
+        </div>
+        <div class="clip-row">
+          <div class="clip blue"><b>0:42</b><span>THE REAL SECRET</span></div>
+          <div class="clip purple"><b>0:58</b><span>NOBODY SAYS THIS</span></div>
+          <div class="clip violet"><b>0:35</b><span>STOP DOING THIS</span></div>
+        </div>
+        <div class="ready">● Ready · 3 clips</div>
+      </div>
+    </section>
+
+    <section class="audience wrap">
+      <span>Made for creators who already have the long version.</span>
+      <div><b>Podcasters</b><b>Streamers</b><b>YouTubers</b><b>Educators</b><b>Coaches</b></div>
+    </section>
+
+    <section class="section wrap" id="features">
+      <span class="eyebrow">HOW CLIPPILOT WORKS</span>
+      <h2>One upload in. <span>Up to five shorts out.</span></h2>
+      <p class="section-lead">A simple workflow from long-form video to post-ready clips.</p>
+      <div class="steps">
+        <article><small>01 · UPLOAD</small><h3>Drop in the long version</h3><p>Choose an MP4 or MOV video file and review its details.</p></article>
+        <article><small>02 · CONFIGURE</small><h3>Set the shape of your shorts</h3><p>Choose vertical format, clip length and how many clips you want.</p></article>
+        <article><small>03 · PROCESS</small><h3>Watch the progress</h3><p>Follow each job status as your clips are prepared.</p></article>
+        <article><small>04 · DOWNLOAD</small><h3>Preview, then post</h3><p>Review your finished clips and download them when ready.</p></article>
+      </div>
+    </section>
+
+    <section class="section wrap" id="dashboard">
+      <span class="eyebrow">YOUR WORKSPACE</span>
+      <h2>Start creating <span>your next shorts.</span></h2>
+      <div class="workspace">
+        <div class="workspace-head">
+          <div><h3>New clipping project</h3><p>Upload a video you own or have permission to use.</p></div>
+          <span class="pill">BETA</span>
+        </div>
+        <label class="dropzone" for="videoInput">
+          <div class="upload-icon">↑</div>
+          <strong id="uploadTitle">Choose a video to upload</strong>
+          <span id="uploadHint">MP4 or MOV · Select a file from your device</span>
+          <input id="videoInput" type="file" accept="video/mp4,video/quicktime,.mp4,.mov" />
+          <span class="button primary">Browse files</span>
+        </label>
+        <div class="settings">
+          <label>Aspect ratio<select id="ratio"><option>9:16 Vertical</option><option>1:1 Square</option><option>4:5 Portrait</option></select></label>
+          <label>Clip length<select id="duration"><option>30–60 seconds</option><option>15–30 seconds</option><option>60–90 seconds</option></select></label>
+          <label>Number of clips<select id="count"><option>5 clips</option><option>3 clips</option><option>1 clip</option></select></label>
+        </div>
+        <button class="button primary generate" id="generateBtn" disabled>Prepare project →</button>
+        <p class="notice" id="notice">Choose a video to enable project setup. AI processing will be connected in a later version.</p>
+      </div>
+    </section>
+
+    <section class="section wrap" id="pricing">
+      <span class="eyebrow">PLANS</span>
+      <h2>Start free. <span>Upgrade when you grow.</span></h2>
+      <div class="pricing">
+        <article><h3>Free</h3><p>Explore the workflow with your own videos.</p><strong>$0</strong><small>Prototype plan</small></article>
+        <article class="featured"><span class="pill">COMING SOON</span><h3>Starter</h3><p>For creators who make shorts regularly.</p><strong>Coming soon</strong><small>Pricing will be announced later</small></article>
+        <article><h3>Pro</h3><p>For high-volume creators and teams.</p><strong>Coming soon</strong><small>Pricing will be announced later</small></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap footer"><a class="brand" href="#home">ClipPilot</a><span>Turn Long Videos Into Viral Shorts.</span><small>© 2026 ClipPilot. Prototype version.</small></footer>
+  <script src="app.js"></script>
+</body>
+</html>
